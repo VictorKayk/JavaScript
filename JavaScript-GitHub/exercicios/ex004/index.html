@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 004</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Trabalhando com Dados em JavaScript 2.0</h1>
+    <button onclick="inicio()">Inicio</button>
+    <section id="resultado">
+        <p>O resultado irá aparecer aqui: </p>
+    </section>
+    <script>
+        function inicio(){
+            var nome = prompt("Insira seu nome: ")
+            var result = document.getElementById("resultado")
+            result.innerHTML += `<p>Seja bem viado <strong>${nome}</strong>!!! &#x1F921</p>`
+        }
+    </script>
+</body>
+</html>
