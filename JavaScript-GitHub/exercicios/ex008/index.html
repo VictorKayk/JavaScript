@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 008</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Calculos em JavaScript.</h1>
+    <button onclick="inicio()">Clica ai</button>
+    <section id="resultado"><p>Resultado...</p></section>
+    <script>
+        function inicio(){
+            var num = prompt("Insira um número:")
+            var result = document.getElementById("resultado")
+            result.innerHTML = `<p>Número escolhido: <strong>${num}</strong><hr></p><ul><li>O valor absoluto é: <strong>${Math.abs(num)}</strong><br><li>Sua parte inteira: <strong>${Math.trunc(num)}</strong><br><li>Valor inteiro mais proximo: <strong>${Math.round(num)}</strong><br><li>Raiz quadrada: <strong>${Math.sqrt(num)}</strong><br><li>Raiz cúbica: <strong>${Math.cbrt(num)}</strong><br><li>O valor de ${num}<sup>2</sup>: <strong>${Math.pow(num, 2)}</strong><br><li>O valor de ${num}<sup>3</sup>: <strong>${Math.pow(num, 3)}</strong></ul><hr>`
+        }
+    </script>
+</body>
+</html>
