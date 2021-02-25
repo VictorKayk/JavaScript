@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 005</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Trabalhando com números:</h1>
+    <button onclick="inicio()">Clica ai</button>
+    <section id="val">
+        <p>O resultado vai aparacer aqui:</p>
+    </section>
+    <script>
+        alert("Seja bem viado ao exercicio 005.")
+        function inicio(){
+            var num = prompt("Insira um número:")
+            var res = document.getElementById("val")
+            res.innerHTML = `<p>O número escolhido é: <strong>${num}</strong><br>O dobro é: <strong>${num*2}</strong><br>A metade é: <strong>${num/2}</strong></p>`
+        }
+    </script>
+</body>
+</html>
