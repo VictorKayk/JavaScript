@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 004</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="inicio()">Comprar o produto</button>
+    <script>
+        function inicio(){
+            var produt = prompt("Insira o produto desejado:")
+            var prec = Number(prompt(`Insira o valor do ${produt}: `))
+            var din = Number(prompt(`Valor dado para comprar o ${produt}:`))
+            var troco = din - prec
+            alert(`O valor do ${produt} é R$${prec}. 
+Você pagou R$${din}. 
+Seu troco é R$${troco}.`)
+        }
+    </script>
+</body>
+</html>
