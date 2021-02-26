@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 006</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Conversor de temperatura</h1>
+    <button onclick="inicio()">Conversor</button>
+    <section id="resultado"><p>Clique no botão para começar...</p></section>
+    <script>
+        function inicio(){
+            var temp = Number(prompt(`Insira a temperatura em °C (Célsius)`))
+            var rest = document.getElementById("resultado")
+            var kelvin = temp + 273
+            var fahr = (temp*1.8) + 32
+            rest.innerHTML = `<h2>A temperatura de <strong>${temp}°C</strong> Célsius, coresponde á:<h2><ul><li><strong>${kelvin}</strong>°K (Kelvin).<br><li><strong>${fahr}</strong>°F (Fahrenheir).</ul>`
+        }
+    </script>
+</body>
+</html>
