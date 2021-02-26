@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 005</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Conversor de medidas.</h1>
+    <button onclick="convert()">Conversor</button>
+    <section id="resultado">Clique no botão para começar...</section>
+    <script>
+        function convert(){
+            var num = Number(prompt(`Insira uma distancia em metros (m): `))
+            var rest = document.getElementById("resultado")
+            rest.innerHTML = `<h2>O valor de <strong>${num}</strong> em metros, corresponde á:</h2><br><ul><li><strong>${num/1000}</strong> em Quilometros (Km).<br><li><strong>${num/100}</strong> em Hectômetro (Hm).<br><li><strong>${num/10}</strong> em Decâmetro (Dam).<br><li><strong>${num}</strong> em Metros (m).<br><li><strong>${num*10}</strong> em Decímetro (Dm).<br><li><strong>${num*100}</strong> em Centímetro (Cm).<br><li><strong>${num*1000}</strong> em Milimetro (Mm).</ul>`
+            }
+    </script>
+</body>
+</html>
