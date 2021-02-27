@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Conversor R$ ---> US$</h1>
+    <button onclick="inicio()">Converter</button>
+    <section id="resultado">Clique no botão para converter</section>
+    <script>
+        var cot = Number(prompt(`Insira a cotação do dolar atual:`))
+        function inicio(){
+            var din = Number(prompt(`Insira quantos R$ tem em sua carteira:`))
+            var conver = din / cot
+            var result = document.getElementById("resultado")
+            result.innerHTML = `<p><strong>R$${din}</strong> na cotação atual de <strong>R$${cot}</strong>.<br>Você terar a quantidade de <strong>US$${conver.toFixed(2)}</strong></p>`
+        }
+    </script>
+</body>
+</html>
