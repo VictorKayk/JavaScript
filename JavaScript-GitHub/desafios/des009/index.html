@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 009</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Reajuste Salarial.</h1>
+    <button onclick="reajuste()">Reajustar Salário.</button>
+    <section id="resultado"><hr><p>Clique no botão para reajustar o salario</p><hr></section>
+    <script>
+        function reajuste(){
+            var nome = prompt(`Insira o nome do funcionario:`)
+            var sal = Number(prompt(`Insira o salario atual:`))
+            var reaj = Number(prompt(`Insira a porcentagem do reajuste:`))
+            var sal_reaj = (sal * reaj) / 100
+            var result = document.getElementById("resultado")
+            result.innerHTML = `<p><h2>Reajuste de salario de <strong>${nome}.</strong></h2><hr><ul><li>Salario antes do reajuste: <strong>R$${sal}.</strong><br><li>Reajuste de <strong>${reaj}%</strong>: <strong>R$${sal_reaj}.</strong><br><li>Salario depois do reajuste: <strong>R$${sal + sal_reaj}.</strong></ul><hr></p>`
+            }
+    </script>
+</body>
+</html>
