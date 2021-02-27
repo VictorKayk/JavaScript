@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 010</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+    <button onclick="inicio()">Resolver</button>
+    <section id="resultado"><hr><p>Aperto o botão para encontrar o <strong>Δ</strong> de uma equação no formato: <strong>a</strong><sup>2</sup>x + <strong>b</strong>x + <strong>c</strong> = 0.</p><hr></section>
+    <script>
+        function inicio(){
+            var val_a = Number(prompt(`Insira o valor de a:`))
+            var val_b = Number(prompt(`Insira o valor de b:`))
+            var val_c = Number(prompt(`Insira o valor de c:`))
+            var val_delta = (val_b ** 2) - 4*val_a*val_c
+            var rest = document.getElementById("resultado")
+            rest.innerHTML = `<hr><h2>Resultado da formula de Bhaskara:</h2><hr><p>Equação:  <strong>${val_a}<sup>2</sup>x + ${val_b}x + ${val_c} = 0</strong><br>O calculo realizado será: <strong>${val_b}<sup>2</sup> -4 . ${val_a} . ${val_c}</strong><br>O valor encontrado para delta foi: <strong>Δ= ${val_delta}</strong></p><hr>`
+        }
+    </script>
+</body>
+</html>
