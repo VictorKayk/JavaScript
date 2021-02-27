@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 008</title>
+    <link rel="stylesheet" href="../../../JavaScript-Video/style.css">
+</head>
+<body>
+    <h1>Calcular desconto</h1>
+    <button onclick="descont()">Desconto de 10%</button>
+    <section id="resultado"><p>Clique no botão para começar</p></section>
+    <script>
+        function descont(){
+            var produt = prompt(`Insira o produto que deseja comprar:`)
+            var preco = Number(prompt(`Insira o preço do ${produt}:`))
+            var desconto = (preco * 10) / 100
+            var result = document.getElementById("resultado")
+            result.innerHTML = `<p><h2>10% de desconto no <strong>${produt}.</strong></h2><br><hr><ul><li>Preço inicial: <strong>R$${preco.toFixed(2)}.</strong><br><li>Desconto de <strong>R$${desconto.toFixed(2)}</strong> (-10%).<br><li>Preço final: <strong>R$${(preco - desconto).toFixed(2)}.</strong></ul><hr></p>`
+        }   
+    </script>
+</body>
+</html>
